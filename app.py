@@ -59,7 +59,7 @@ diary = st.text_area("오늘 무슨 일이 있었어?")
 api_key = "AIzaSyDYHWL72TiASDf2bSyXa63RyPVThZ55xnI" # 🚨 유저님의 진짜 구글 API Key를 여기에 다시 입력하세요!
 
 if st.button("AI 분석 시작"):
-    if diary and api_key and api_key != "여기에_진짜_API_KEY를_넣으세요":
+    if diary and api_key and api_key != "AIzaSyDYHWL72TiASDf2bSyXa63RyPVThZ55xnI":
         try:
             genai.configure(api_key=api_key)
             model = genai.GenerativeModel('gemini-pro')
