@@ -4,7 +4,7 @@ import google.generativeai as genai
 
 # 1. 우리만의 기념일 세팅 (2025년 9월 12일 시작)
 ANNIVERSARY = datetime.date(2025, 9, 12) 
-PRIVATE_PASSWORD = "1234" # 우리만의 비밀번호 (원하는 대로 바꾸세요!)
+PRIVATE_PASSWORD = "3829" # 우리만의 비밀번호 (원하는 대로 바꾸세요!)
 
 st.set_page_config(page_title="우리만의 공간", page_icon="💖")
 
@@ -34,7 +34,7 @@ st.write(f"처음 만난 날: {ANNIVERSARY}")
 st.divider()
 st.subheader("💌 Gemini에게 일기 보여주기")
 diary = st.text_area("오늘 무슨 일이 있었어?")
-api_key = "여기에_진짜_API_KEY를_넣으세요" # 구글 AI 스튜디오에서 받은 키!
+api_key = "AIzaSyDYHWL72TiASDf2bSyXa63RyPVThZ55xnI" # 구글 AI 스튜디오에서 받은 키!
 
 if st.button("AI 분석 시작"):
     if diary and api_key:
